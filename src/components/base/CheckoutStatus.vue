@@ -6,14 +6,14 @@
       </div>
       <span class="status__label">Delivery</span>
     </div>
-    <p class="material-icons status__arrow">keyboard_arrow_right</p>
+    <span class="material-icons status__arrow">keyboard_arrow_right</span>
     <div class="status__collection">
       <div :class="this.$route.path === '/payment' ? 'status__number--done' : ''" class="status__number">
         <span>2</span>
       </div>
       <span class="status__label">Payment</span>
     </div>
-    <p class="material-icons status__arrow">keyboard_arrow_right</p>
+    <span class="material-icons status__arrow">keyboard_arrow_right</span>
     <div class="status__collection">
       <div :class="this.$route.path === '/finish' ? 'status__number--done' : ''" class="status__number">
         <span>3</span>
@@ -33,6 +33,8 @@ export default {
 .status
   height 70px
   width 500px
+  margin-top 1.25rem
+  position fixed
   display flex
   justify-content space-around
   align-items center

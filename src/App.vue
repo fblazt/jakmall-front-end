@@ -22,12 +22,11 @@ export default {
 @import "assets/css/base-styl.css"
 
 #app
-  height 100vh
+  min-height 100vh
   width 100vw
   background-color #FFFAE6
 
   header
-    padding-top 1.25rem
     display flex
     justify-content center
 </style>

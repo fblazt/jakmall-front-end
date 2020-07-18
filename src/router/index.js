@@ -7,7 +7,10 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect: '/delivery',
+    redirect: '/delivery'
+  },
+  {
+    path: '/delivery',
     name: 'Delivery',
     component: Delivery,
     meta: { title: 'Delivery - Jakmall'}
